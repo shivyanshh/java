@@ -1,0 +1,42 @@
+public class static_method {
+    public static void main(String[] args){
+        mobile obj = new mobile();
+        obj.brand= "apple";
+        obj.price = 150000;
+        obj.name= "smartphone";
+
+        mobile obj2 = new mobile();
+        obj2.brand= "samsung";
+        obj2.price = 170000;
+        obj2.name= "smartphone";
+
+        obj.name= "phone"; 
+
+        obj.show();
+        obj2.show();
+
+        mobile.show1(obj);
+        mobile.show1(obj2);
+
+
+
+
+
+    }
+}
+class mobile{
+    String brand;      //instance variables
+    int price;
+    //String name;       ---->its common in every object
+
+
+    static String name; //this is a common variable and everyobject will refer to this 
+
+    public void show(){
+        System.out.println("brand:"+brand+" price:"+price+" name:"+name);
+
+    }//a non static method
+    public static void show1(mobile obj){
+        System.out.println("brand:"+obj.brand+" price:"+obj.price+" name:"+name);  // u camt put non static variables in static method 
+    }//only when u put a reference
+}

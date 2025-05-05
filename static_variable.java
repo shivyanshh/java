@@ -23,7 +23,7 @@ public class static_variable {
         obj2.price = 170000;
         obj2.name= "smartphone";
 
-        obj.name= "phone";
+        obj.name= "phone"; 
 
         obj.show();
         obj2.show();
