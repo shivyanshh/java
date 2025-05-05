@@ -1,25 +1,36 @@
 class mobile{
-    String brand;
+    String brand;      //instance variables
     int price;
-    String name;
+    //String name;       ---->its common in every object
+
+
+    static String name; //this is a common variable and everyobject will refer to this 
+
     public void show(){
-        System.out.println(brand+":"+ price + ":"+name);
+        System.out.println("brand:"+brand+" price:"+price+" name:"+name);
+
     }
 }
 public class static_variable {
     public static void main(String[] args){
-        mobile obj1 = new mobile();
-        obj1.brand="apple";
-        obj1.price=1500;
-        obj1.name="smart phone";
+        mobile obj = new mobile();
+        obj.brand= "apple";
+        obj.price = 150000;
+        obj.name= "smartphone";
 
         mobile obj2 = new mobile();
-        obj2.brand="samsung";
-        obj2.price=1700;
-        obj2.name="smart phone";
-        obj1.show();
+        obj2.brand= "samsung";
+        obj2.price = 170000;
+        obj2.name= "smartphone";
+
+        obj.name= "phone";
+
+        obj.show();
         obj2.show();
-        
+
+
+
+
 
     }
 }
