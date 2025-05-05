@@ -15,8 +15,7 @@ public class static_method {
         obj.show();
         obj2.show();
 
-        mobile.show1(obj);
-        mobile.show1(obj2);
+        
 
 
 

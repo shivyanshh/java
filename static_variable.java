@@ -16,14 +16,14 @@ public class static_variable {
         mobile obj = new mobile();
         obj.brand= "apple";
         obj.price = 150000;
-        obj.name= "smartphone";
+        mobile.name= "smartphone";
 
         mobile obj2 = new mobile();
         obj2.brand= "samsung";
         obj2.price = 170000;
-        obj2.name= "smartphone";
+        mobile.name= "smartphone";
 
-        obj.name= "phone"; 
+        mobile.name= "phone"; 
 
         obj.show();
         obj2.show();
